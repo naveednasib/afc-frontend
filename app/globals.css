@@ -377,31 +377,31 @@ body {
   gap: 70px;
 }
 
-.boxes-main .boxe {
+.boxes-main .box {
   width: 100%;
 }
 
-.boxes-main .boxe img:hover {
+.boxes-main .box img:hover {
   scale: 1.1;
 }
 
-.boxes-main .boxe img {
+.boxes-main .box img {
   width: 100%;
   transition: all 1s ease;
   cursor: pointer;
 }
 
-.boxes-main .boxe .text {
+.boxes-main .box .text {
   margin: 20px 0px;
 }
 
-.boxes-main .boxe .text .date {
+.boxes-main .box .text .date {
   color: #3D37F1;
   font-size: 16px;
   margin-bottom: 10px;
 }
 
-.boxes-main .boxe .text p {
+.boxes-main .box .text p {
   color: #000;
   font-size: 18px;
   width: 30%;
