@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import Image from 'next/image'
-import Videos01 from '@/public/img/videos01.svg';
-import Videos02 from '@/public/img/videos02.svg';
-import Videos03 from '@/public/img/videos03.svg';
+// import Videos01 from '/img/videos01.svg';
+// import Videos02 from '/img/videos02.svg';
+// import Videos03 from '/img/videos03.svg';
 // import Videos01 from '../../public/img/videos01.svg'
 // import Videos02 from '../../public/img/videos02.svg'
 // import Videos03 from '../../public/img/videos03.svg'
@@ -19,7 +19,7 @@ export class videos extends Component {
           <div className='boxes-main'>
             <div className='box'>
               <Image
-                src={Videos01}
+                src="/img/videos01.svg"
                 alt="Picture of the author"
                 width={343}
                 height={210}
@@ -33,7 +33,7 @@ export class videos extends Component {
             </div>
             <div className='box'>
               <Image
-                src={Videos02}
+                src="/img/videos02.svg"
                 alt="Picture of the author"
                 width={343}
                 height={210}
@@ -47,7 +47,7 @@ export class videos extends Component {
             </div>
             <div className='box'>
               <Image
-                src={Videos03}
+                src="/img/videos03.svg"
                 alt="Picture of the author"
                 width={343}
                 height={210}
