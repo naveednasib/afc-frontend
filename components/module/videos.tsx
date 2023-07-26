@@ -19,7 +19,7 @@ export class videos extends Component {
           <div className='boxes-main'>
             <div className='box'>
               <Image
-                src="/img/videos01.svg"
+                src="/img/videos01.png"
                 alt="Picture of the author"
                 width={343}
                 height={210}
@@ -33,7 +33,7 @@ export class videos extends Component {
             </div>
             <div className='box'>
               <Image
-                src="/img/videos02.svg"
+                src="/img/videos02.png"
                 alt="Picture of the author"
                 width={343}
                 height={210}
@@ -47,7 +47,7 @@ export class videos extends Component {
             </div>
             <div className='box'>
               <Image
-                src="/img/videos03.svg"
+                src="/img/videos03.png"
                 alt="Picture of the author"
                 width={343}
                 height={210}
