@@ -1,11 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+
 }
 
 @media (prefers-color-scheme: dark) {
@@ -18,10 +18,608 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: #F1F1F1;
+    font-family: 'Montserrat', sans-serif;
+
 }
+
+@font-face {
+  font-family: "Monument Extended Bold";
+  src: url("https://db.onlinewebfonts.com/t/55d433372d270829c51e2577a78ef12d.eot");
+  src: url("https://db.onlinewebfonts.com/t/55d433372d270829c51e2577a78ef12d.eot?#iefix")format("embedded-opentype"),
+  url("https://db.onlinewebfonts.com/t/55d433372d270829c51e2577a78ef12d.woff2")format("woff2"),
+  url("https://db.onlinewebfonts.com/t/55d433372d270829c51e2577a78ef12d.woff")format("woff"),
+  url("https://db.onlinewebfonts.com/t/55d433372d270829c51e2577a78ef12d.ttf")format("truetype"),
+  url("https://db.onlinewebfonts.com/t/55d433372d270829c51e2577a78ef12d.svg#Monument Extended Bold")format("svg");
+}
+
+
+.logo img:hover {
+  scale: 0.9;
+}
+
+.logo img {
+  transition: all 0.8s ease;
+}
+.header {
+  position: absolute;
+  left: 0;
+  right: 0;
+  color: #fff;
+}
+.header ul li a {
+  font-weight: 500;
+  transition: all 0.8s ease;
+}
+.bannersection {
+  background: url(/img/bannerback.jpg);
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #fff;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.bannersection h1 {
+    font-size: 50px;
+    font-weight: 800;
+    line-height: 54px;
+    letter-spacing: 2px;
+}
+.bannersection p {
+    font-size: 18px;
+    width: 25%;
+    margin: 22px 0px;
+}
+.bannersection button {
+    border-radius: 5px;
+    background: #8066FA;
+    box-shadow: 0px 10px 50px 0px rgba(61, 55, 241, 0.25);
+    padding: 14px 24px;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    transition: all 0.5s ease;
+}
+.bannersection button:hover {
+  background: #9ce22f;
+  border: 1px solid #8066FA;
+  color: #8066fa;
+}
+.header ul li.active a {
+  color: #9CE22F;
+  font-weight: 700;
+}
+.header ul li a:hover {
+  color: #9CE22F;
+}
+.upcoming-main {
+  border-radius: 5px;
+  background: #110C34;
+  box-shadow: 0px 10px 50px 0px rgba(17, 12, 52, 0.25);
+  color: #fff;
+  padding: 30px;
+}
+.slick-current .upcoming-main {
+  background: #9CE22F;
+  color: #000;
+}
+
+.slick-current .upcoming-box  h2 {
+  color: #110c34;
+}
+.upcoming-box h2 {
+  color: #FFF;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+  width: 140px;
+  letter-spacing: 1px;
+}
+
+.upcoming-logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px 0px;
+  gap: 10px;
+}
+
+.upcoming-afa {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px;
+}
+.upcoming-logo .month {
+  text-align: center;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+.upcoming-logo .group {
+  font-size: 12px;
+  opacity: 0.7;
+  font-weight: 300;
+  text-align: center;
+}
+
+.upcoming-afa .time {
+  border-radius: 5px;
+  background: #9CE22F;
+  color: #000;
+  padding: 4px 10px;
+  font-weight: 600;
+}
+
+.upcoming-main .text {
+  text-align: center;
+  margin: 0 auto;
+  font-size: 16px;
+}
+.upcoming-section {
+  /* display: grid;
+  grid-template-columns: repeat(3, 25%);
+  justify-content: end; */
+  gap: 1%;
+  position: relative;
+  top: -160px;
+  margin-left: 10vw;
+}
+.upcoming-section .slick-slide { margin: 0px 20px; }
+.upcoming-afa .afa {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.box-main {
+  display: grid;
+  grid-template-columns: 30% 65%;
+  justify-content: space-between;
+}
+.box-main .bol-rgt {
+  display: grid;
+  grid-template-columns: 48% 48%;
+  justify-content: space-between;
+  row-gap: 20px;
+}
+
+.box-main .boxes {
+  background: #fff;
+  height: 100%;
+  overflow: hidden;
+}
+
+.box-main .boxes .img img {
+  width: 100%;
+  transition: all 1s ease;
+  cursor: pointer;
+}
+.box-main .boxes:hover .img img {
+  scale: 1.1;
+}
+.box-main .boxes .text {
+  padding: 20px;
+}
+
+.box-main .boxes .text h2 {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.box-main .boxes .text h4.date {
+  color: #8066FA;
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.box-main .boxes .text p {
+  color: #6A6A6A;
+  margin: 10px 0px;
+}
+.heading-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.heading-main .heading {
+  color: #242565;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  font-family: "Monument Extended Bold";
+}
+
+.heading-main .selectmy select {
+  border-radius: 5px;
+  border: 0;
+  background: none;
+  padding: 0px 10px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.heading-main .selectmy {
+  background: rgba(128, 102, 250, 0.15);
+  border: 0;
+  padding: 12px 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.heading-main .selectmy select:focus {
+  outline: none;
+}
+.latest-section .pra {
+  color: #6A6A6A;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  margin-bottom: 24px;
+}
+
+.latest-section button {
+    color: #8066FA;
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border-radius: 5px;
+    border: 1.5px solid #8066FA;
+    box-shadow: 0px 10px 50px 0px rgba(61, 55, 241, 0.25);
+    padding: 14px 26px;
+    display: table;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    transition: all 0.5s ease;
+}
+
+.latest-section button:hover {
+    background: #8066FA;
+    color: #fff;
+}
+.match-section {
+  background: #9ce22f url(/img/hi-back.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.match-main {
+  display: grid;
+  grid-template-columns: 46% 40%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.match-main .rgt p {
+  width: 60%;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+.match-main .rgt h2 {
+  font-size: 46px;
+  font-weight: 800;
+  margin-bottom: 10px;
+  font-family: "Monument Extended Bold";
+}
+.match-main .rgt button:hover {
+  border: 1px solid #8066FA;
+  background: #0000;
+  color: #8066FA;
+}
+.match-main .rgt button {
+  border-radius: 5px;
+  background: #8066FA;
+  box-shadow: 0px 10px 50px 0px rgba(61, 55, 241, 0.25);
+  padding: 14px 30px;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  color: #fff;
+  text-transform: capitalize;
+  transition: all 0.5s ease;
+}
+
+.match-main .lft {
+  position: relative;
+  bottom: -114px;
+}
+.match-main .lft .highlights {
+  font-size: 46px;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: -43px;
+  letter-spacing: 6px;
+  font-family: "Monument Extended Bold";
+}
+.videos-section {
+  padding: 10vw 0px 50px 0px;
+}
+
+.videos-section .heading {
+  margin-bottom: 36px;
+}
+
+.videos-section .heading h1 {
+  color: #242565;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  font-family: "Monument Extended Bold";
+}
+
+.videos-section .heading p {
+  color: #6A6A6A;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  margin-bottom: 24px;
+}
+
+.boxes-main {
+  display: flex;
+  justify-content: space-between;
+  gap: 70px;
+}
+
+.boxes-main .boxe {
+  width: 100%;
+}
+
+.boxes-main .boxe img:hover {
+  scale: 1.1;
+}
+
+.boxes-main .boxe img {
+  width: 100%;
+  transition: all 1s ease;
+  cursor: pointer;
+}
+
+.boxes-main .boxe .text {
+  margin: 20px 0px;
+}
+
+.boxes-main .boxe .text .date {
+  color: #3D37F1;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.boxes-main .boxe .text p {
+  color: #000;
+  font-size: 18px;
+  width: 30%;
+  font-weight: 500;
+}
+.videos-section button {
+  color: #8066FA;
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border-radius: 5px;
+  border: 1.5px solid #8066FA;
+  box-shadow: 0px 10px 50px 0px rgba(61, 55, 241, 0.25);
+  padding: 14px 26px;
+  display: table;
+  margin: 0 auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  transition: all 0.5s ease;
+}
+.videos-section button:hover {
+
+  background: #8066FA;
+  color: #fff;
+}
+.fans-section {
+  margin-left: 10vw;
+}
+
+.fans-section .heading {
+  margin-bottom: 35px;
+}
+
+.fans-section .heading h2 {
+  color: #242565;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  font-family: "Monument Extended Bold";
+}
+
+.fans-section .heading p {
+  color: #6A6A6A;   
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  margin-bottom: 24px;
+}
+.fans-section .slick-slide {
+  margin: 0px 10px;
+}
+.Partners-section {
+  padding: 80px 0px;
+}
+
+.Partners-section .heading {
+  margin-bottom: 30px;
+}
+
+.Partners-section .heading h2 {
+  color: #242565;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  font-family: "Monument Extended Bold";
+}
+
+.Partners-section .heading p {
+  color: #6A6A6A;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  margin-bottom: 24px;
+}
+.Partnersboxes-main {
+  border-radius: 5px;
+  background: #D9D9D9;
+  padding: 40px;
+}
+.footer-section {
+  background: #110C34;
+  color: #fff;
+  padding: 80px 0px;
+  padding-bottom: 40px;
+}
+
+.footer-main {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-nav h4 {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+
+.footer-lop h4 {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+
+.footer-nav ul {
+  list-style: circle;
+  padding-left: 18px;
+}
+.footer-logo img:hover {
+  scale: 0.9;
+}
+
+.footer-logo img {
+  transition: all 1.5s ease;
+}
+.footer-nav ul li {
+  margin-bottom: 14px;
+}
+
+.footer-nav ul li a {
+  opacity: 0.7;
+  transition: all 0.5s ease;
+}
+.footer-nav ul li a:hover {
+  opacity: 1;
+}
+.footer-lop p {
+  font-size: 16px;
+  width: 80%;
+  margin-bottom: 20px;
+}
+
+.subscibe {
+  position: relative;
+}
+
+.subscibe input {
+  border-radius: 5px;
+  border: 2px solid #F1F1F1;
+  background: #FFF;
+  width: 100%;
+  padding: 30px 20px;
+  color: #000;
+  font-size: 18px;
+  transition: all 0.5s ease;
+}
+.subscibe input:focus {
+  outline: none;
+  padding-left: 30px;
+}
+.subscibe button {
+  border-radius: 5px;
+  background: #8066FA;
+  box-shadow: 0px 10px 50px 0px rgba(61, 55, 241, 0.25);
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: 10px;
+  padding: 0px 30px;
+  font-size: 16px;
+  transition: all 0.5s ease
+}
+.subscibe button:hover {
+  background: #48369c;
+}
+.footer-copy p {
+  text-align: center;
+  letter-spacing: 3px;
+  opacity: 0.8;
+}
+
+.footer-copy {
+  border-top: 1px solid #ffffff30;
+  padding-top: 40px;
+  margin-top: 40px;
+}
+.Partnersboxes-main .box img:hover {
+  scale: 0.9;
+}
+
+.Partnersboxes-main .box img {
+  transition: all 1.5s ease;
+}
+.fans-section img {
+  width: 100%;
+  transition: all 1s ease;
+  cursor: pointer;
+}
+
+.fans-section img:hover {
+  scale: 0.9;
+}
+
+
+
+.type{
+  transition: all 4s ease;
+  scale: 1;
+  animation: shrink 5s infinite alternate;
+}
+@keyframes shrink {
+  0% {
+    scale: 1;
+  }
+  100% {
+    scale: 0.7;
+  }
+}
+
+
+
