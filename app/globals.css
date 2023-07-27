@@ -552,10 +552,10 @@ body {
   border: 2px solid #F1F1F1;
   background: #FFF;
   width: 100%;
-  padding: 30px 20px;
+  padding: 22px 20px;
   color: #000;
-  font-size: 18px;
-  transition: all 0.5s ease;
+  font-size: 16px;
+  transition: all 0.5s ease
 }
 .subscibe input:focus {
   outline: none;
@@ -563,16 +563,16 @@ body {
 }
 .subscibe button {
   border-radius: 5px;
-  background: #8066FA;
-  box-shadow: 0px 10px 50px 0px rgba(61, 55, 241, 0.25);
-  position: absolute;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  margin: 10px;
-  padding: 0px 30px;
-  font-size: 16px;
-  transition: all 0.5s ease
+    background: #8066FA;
+    box-shadow: 0px 10px 50px 0px rgba(61, 55, 241, 0.25);
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: 6px;
+    padding: 0px 26px;
+    font-size: 16px;
+    transition: all 0.5s ease;
 }
 .subscibe button:hover {
   background: #48369c;
@@ -605,8 +605,6 @@ body {
   scale: 0.9;
 }
 
-
-
 .type{
   transition: all 4s ease;
   scale: 1;
@@ -620,6 +618,92 @@ body {
     scale: 0.7;
   }
 }
+.mobilemenu {
+  display: none;
+}
+
+@media only screen and (max-width: 1200px) {
+.header ul {gap: 30px;}
+.bannersection p {width: 40%;}
+.match-main .rgt h2 {font-size: 30px;}
+.match-main .lft .highlights {font-size: 32px;  margin-bottom: -26px;}
+.match-main .lft {bottom: -74px;}
+.boxes-main .box .text p {width: 70%;}
+.footer-main {display: grid;  grid-template-columns: 25% 25% 14% 40%;}
+.subscibe input {padding: 20px 10px;  font-size: 14px;}
+.subscibe button {padding: 0px 20px;  font-size: 14px;}
+
+}
+
+@media only screen and (max-width: 1000px) {
+  .header {gap: 20px;  }
+  .header ul {gap: 15px;}
+  .bannersection p {width: 50%;  }
+  .upcoming-section .slick-slide {margin: 0px 10px;  }
+  .match-main {grid-template-columns: 46% 50%;  }
+  .boxes-main {gap: 16px;}
+  .boxes-main .box .text p {font-size: 14px;}
+  .footer-main {grid-template-columns: 100%;}
+  
+  }
+
+  /* @media only screen and (max-width: 800px) {
+    .mobilemenu {
+      display: block;
+    }
+    .upcoming-section {
+      gap: 0;
+      position: relative;
+      top: -24px;
+      margin-left: 0;
+  }
+  } */
 
 
 
+@media only screen and (max-width: 800px) {
+.upcoming-section {gap: 0%;top: 0px;margin-top: -130px;margin-left: 0;padding: 0px 20px;}
+.upcoming-section .slick-slide {margin: 0px 0px;}
+.latest-section {margin-top: 40px;}
+.bannersection p {font-size: 14px;width: 100%;}
+.bannersection h1 br {display: none;}
+.bannersection h1 {font-size: 30px;  line-height: 34px;}
+.upcoming-logo .month {font-size: 12px;letter-spacing: 0px;}
+.bannersection {padding: 0px 20px;    background-position: center;}
+.heading-main {flex-direction: column;align-items: flex-start;}
+.heading-main .heading {font-size: 28px;  margin-bottom: 10px;}
+.latest-section .pra {font-size: 16px; ;margin-bottom: 24px;}
+.heading-main .selectmy {width: 100%;}
+.box-main {grid-template-columns: 100%;}
+.box-main .bol-rgt {grid-template-columns: 100%;}
+.match-main {grid-template-columns: 100%;}
+.match-main .lft {bottom: 0;}
+.match-main .rgt p {width: 100%;font-size: 16px;}
+.match-section {padding: 30px 0px;}
+.videos-section .heading h1 {font-size: 28px;}
+.boxes-main {gap: 10px;  flex-direction: column;}
+.fans-section {margin-left: 0;  padding-right: 2rem;padding-left: 2rem;}
+.fans-section .heading h2 {font-size: 28px;}
+.fans-section .heading p {font-size: 14px;}
+.fans-section .slick-slide {margin: 0px 0px;}
+.Partners-section .heading h2 {font-size: 28px;}
+.Partners-section .heading p br {display: none;}
+.Partners-section .heading p {font-size: 14px;}
+.Partnersboxes-main {padding: 20px;}
+.Partnersboxes-main .first {display: grid;  grid-template-columns: 50% 50%;  gap: 0;margin: 0;}
+.footer-main {justify-content: center;  flex-direction: column;align-items: center;  gap: 20px;}
+.footer-lop p {font-size: 14px;  width: 100%;}
+
+.match-main .lft .highlights {font-size: 28px;  margin-bottom: -23px;}
+.match-main .rgt h2 {font-size: 28px;}
+.header {justify-content: space-around;}
+.bannersection button {font-size: 14px;  width: 100%;}
+.boxes-main .box .text p {width: 100%;}
+.subscibe input {padding: 16px 12px;  letter-spacing: -0.5px;font-size: 14px;}
+.subscibe button {padding: 0px 10px;  font-size: 12px;}
+.videos-section button, .match-main .rgt button {margin: 0px;width: 100%;font-size: 14px;}
+.latest-section button{width: 100%;font-size: 14px;}
+.mobilemenu {
+  display: block;
+}
+}

@@ -18,7 +18,7 @@ export class Partners extends Component {
             <p>We&lsquo;ve had the pleasure of working with global established entities. <br></br>These are just some of them.</p>
             </div>
             <div className="Partnersboxes-main">
-                <div className='flex justify-around mb-20'>
+                <div className='first flex justify-around mb-20'>
                     <div className="box">
                     <Link href="/">  <Image
                         src={partners01}
@@ -52,7 +52,7 @@ export class Partners extends Component {
                         /></Link>
                     </div>
                 </div> 
-                <div className='flex justify-center gap-40'>
+                <div className='first flex justify-center gap-40'>
                     <div className="box">
                     <Link href="/">   <Image
                         src={partners05}

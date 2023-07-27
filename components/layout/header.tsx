@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import Navleft from '../ui/nav-left'
 import Logo from '../ui/logo'
 import Navright from '../ui/nav-rgt'
+import Mobilenav from '../ui/mobile-nav'
 
 const header = () => {
   return (
@@ -9,6 +10,7 @@ const header = () => {
       <Navleft />
       <Logo />
       <Navright />
+      <Mobilenav/>
     </div>
   )
 }

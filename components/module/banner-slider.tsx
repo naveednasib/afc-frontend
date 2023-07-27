@@ -19,8 +19,27 @@ export class Bannerslider extends Component {
         autoplay: true,
         slidesToShow: 3,
         slidesToScroll: 1,
-      
-        adaptiveHeight: true
+        adaptiveHeight: true,
+        responsive: [
+            {
+                breakpoint: 1200,
+                settings: {
+                  slidesToShow: 2,
+                  centerMode: false,
+                  infinite: false,
+                  
+                },
+              },
+            {
+              breakpoint: 640,
+              settings: {
+                slidesToShow: 1,
+                centerMode: false,
+                infinite: false,
+                
+              },
+            },
+          ],
       };
     return (
     <div className='upcoming-section'>

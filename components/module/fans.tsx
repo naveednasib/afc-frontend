@@ -19,7 +19,27 @@ export default class SimpleSlider extends Component {
         slidesToShow: 5,
         slidesToScroll: 1,
         centerMode: true,
-        adaptiveHeight: true
+        adaptiveHeight: true,
+        responsive: [
+          {
+            breakpoint: 1200,
+            settings: {
+              slidesToShow: 4,
+              centerMode: false,
+              infinite: false,
+              
+            },
+          },
+          {
+            breakpoint: 640,
+            settings: {
+              slidesToShow: 1,
+              centerMode: false,
+              infinite: false,
+              
+            },
+          },
+        ],
     };
     return (
       <div className="fans-section">

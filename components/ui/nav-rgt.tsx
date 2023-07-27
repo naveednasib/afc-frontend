@@ -4,7 +4,7 @@ import Link from 'next/link'
 export class Navrgt extends Component {
   render() {
     return (
-      <div>
+      <div className='xl:block 2xl:block lg:block   md:block hidden'>
            <ul className="flex gap-20">
             <li><Link href="/">Schedule</Link></li>
             <li><Link href="/">Tickets</Link></li>
