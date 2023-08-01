@@ -7,7 +7,7 @@ import Match from '../components/module/match'
 import Videos from '../components/module/videos'
 import Fans from '../components/module/fans'
 import Partners from '../components/module/Partners'
-
+import Stadiums from '../components/module/stadiums'
 
 export default function Home() {
   
@@ -15,6 +15,7 @@ export default function Home() {
     <div>
       <Banner />
       <Bannerslider />
+      <Stadiums />
       <Latest />
       <Match />
       <Videos />

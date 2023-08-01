@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { useState } from 'react';
 import Image from 'next/image'
 import latest01 from '../../public/img/latest01.svg'
 import latest02 from '../../public/img/latest02.svg'
@@ -6,8 +6,8 @@ import latest03 from '../../public/img/latest03.svg'
 import latest04 from '../../public/img/latest04.svg'
 import latest05 from '../../public/img/latest05.svg'
 
-export class latest extends Component {
-  render() {
+ function latest(){
+ 
     return (
      <div className='latest-section'>
       <div className='container mx-auto'>
@@ -22,8 +22,6 @@ export class latest extends Component {
         </div>
        </div>
        <div className='pra'>Our latest news update</div>
-
-
      <div className='box-main'>
         <div className='bol-lft'>
            <div className='boxes'>
@@ -117,7 +115,7 @@ export class latest extends Component {
       </div>
       </div>
     )
-  }
+  
 }
 
 export default latest

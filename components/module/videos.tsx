@@ -1,13 +1,10 @@
-import React, { Component } from 'react'
+
 import Image from 'next/image'
-// import Videos01 from '/img/videos01.svg';
-// import Videos02 from '/img/videos02.svg';
-// import Videos03 from '/img/videos03.svg';
-// import Videos01 from '../../public/img/videos01.svg'
-// import Videos02 from '../../public/img/videos02.svg'
-// import Videos03 from '../../public/img/videos03.svg'
-export class videos extends Component {
-  render() {
+
+
+
+function videos(){
+
     return (
       <div className='videos-section'>
         <div className='container mx-auto'>
@@ -59,14 +56,12 @@ export class videos extends Component {
                   Coach Reactions</p>
               </div>
             </div>
-
           </div>
           <button>Learn More</button>
-
         </div>
+    
       </div>
     )
-  }
 }
 
 export default videos

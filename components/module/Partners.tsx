@@ -14,66 +14,63 @@ export class Partners extends Component {
       <div className='Partners-section'>
          <div className='container mx-auto'>
             <div className="heading">
-            <h2>Our Partners</h2>
-            <p>We&lsquo;ve had the pleasure of working with global established entities. <br></br>These are just some of them.</p>
+                <h2>Our Partners & Supporters</h2>
+                <p>We&lsquo;ve had the pleasure of working with global established entities. <br></br>These are just some of them.</p>
             </div>
             <div className="Partnersboxes-main">
                 <div className='first flex justify-around mb-20'>
                     <div className="box">
-                    <Link href="/">  <Image
-                        src={partners01}
-                        alt="Picture of the author"
-                        width={149}
-                        height={82}
-                        /></Link>
+                        <Link href="/">  <Image
+                            src={partners01}
+                            alt="Picture of the author"
+                            width={149}
+                            height={82}
+                            /></Link>
                     </div>
                     <div className="box">
-                    <Link href="/">   <Image
-                        src={partners02}
-                        alt="Picture of the author"
-                        width={149}
-                        height={82}
-                        /></Link>
+                        <Link href="/">   <Image
+                            src={partners02}
+                            alt="Picture of the author"
+                            width={149}
+                            height={82}
+                            /></Link>   
                     </div>   
                     <div className="box">
-                    <Link href="/">   <Image
-                    src={partners03}
-                    alt="Picture of the author"
-                    width={149}
-                    height={82}
-                    /></Link>
-                    </div> 
-                    <div className="box">
-                    <Link href="/">  <Image
-                        src={partners04}
+                        <Link href="/">   <Image
+                        src={partners03}
                         alt="Picture of the author"
                         width={149}
                         height={82}
                         /></Link>
+                    </div> 
+                    <div className="box">
+                        <Link href="/">  <Image
+                            src={partners04}
+                            alt="Picture of the author"
+                            width={149}
+                            height={82}
+                            /></Link>
                     </div>
                 </div> 
                 <div className='first flex justify-center gap-40'>
                     <div className="box">
-                    <Link href="/">   <Image
-                        src={partners05}
-                        alt="Picture of the author"
-                        width={149}
-                        height={82}
-                        /></Link>
+                        <Link href="/">   <Image
+                            src={partners05}
+                            alt="Picture of the author"
+                            width={149}
+                            height={82}
+                            /></Link>
                     </div>
                     <div className="box">
-                    <Link href="/">  <Image
-                        src={partners06}
-                        alt="Picture of the author"
-                        width={149}
-                        height={82}
-                        /></Link>
+                        <Link href="/">  <Image
+                            src={partners06}
+                            alt="Picture of the author"
+                            width={149}
+                            height={82}
+                            /></Link>
                     </div>
                 </div>
-                </div>
-               
-          
-
+            </div>
         </div>
       </div>
     )
