@@ -53,7 +53,7 @@ body {
 }
 .bannersection {
   background: url(/img/bannerback.jpg);
-  height: 100vh;
+  height: 900px;
   text-align: center;
   display: flex;
   justify-content: center;
